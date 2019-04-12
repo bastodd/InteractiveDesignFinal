@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { 
+    margin: 0;
+}
+
+.navbar {
+    height: 15vh;
+    background-color: grey;
+}
