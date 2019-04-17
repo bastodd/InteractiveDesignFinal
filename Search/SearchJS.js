@@ -1,7 +1,7 @@
 var searchField = document.getElementById("search-field").value;
 
 function startSearch() {
-    document.clear();
+    $('#results').html("");
     searchField = document.getElementById("search-field").value;
     var myurl = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=" + searchField;
 
