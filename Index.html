@@ -8,6 +8,14 @@
     <link rel="stylesheet" type="text/css" href="Index/IndexStylesheet.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/babel-polyfill/dist/polyfill.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@1.5.12/dist/vuetify.min.js"></script>
     <script src="Index/IndexScript.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -16,11 +24,9 @@
             integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
             crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/babel-polyfill/dist/polyfill.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vuetify@1.5.12/dist/vuetify.min.js"></script>
 
-    </head>
+
+</head>
 
     <body>
 
@@ -46,8 +52,16 @@
         </header>
         <!-- End header section -->
         <!-- Start carousel  -->
-        <section id="carousel"></section>
+        <section id="carousel">
+            <v-carousel hide-delimiters>
+                <v-carousel-item v-for="(item,i) in items"
+                                 :key="i"
+                                 :src="item.src"></v-carousel-item>
+            </v-carousel>
+        </section>
         <!-- End carousel  -->
+
+
         <!--Start Search-->
         <!-- Search form -->
         <div id="searchbar" class="center-block">
@@ -66,6 +80,7 @@
             </div>
         </div>
         <!--End Search-->
+
         <!-- Start Gallery -->
         <section class="gallery">
             <div id="app">
@@ -73,26 +88,18 @@
                     <v-container fluid>
                         <v-layout justify-space-around>
                             <v-flex xs5>
-                                <div class="title mb-1">Default (cover)</div>
                                 <v-layout column>
-                                    <div class="subheading">Matching</div>
-                                    <v-img src="https://picsum.photos/510/300?random" aspect-ratio="1.7"></v-img>
-                                    <div class="subheading pt-3">Too high</div>
-                                    <v-img src="assets/muffinstock.jpg" aspect-ratio="2"></v-img>
-                                    <div class="subheading pt-3">Too low</div>
-                                    <v-img src="assets/muffinstock.jpg" aspect-ratio="1.4"></v-img>
+                                    <v-img src="./assets/breakfaststock.jpg" aspect-ratio="1.7"></v-img>
+                                    <v-img src="./assets/burgerstock.jpg" aspect-ratio="2"></v-img>
+                                    <v-img src="./assets/muffinstock.jpg" aspect-ratio="1.4"></v-img>
                                 </v-layout>
                             </v-flex>
 
                             <v-flex xs5>
-                                <div class="title mb-1">Contain</div>
                                 <v-layout column>
-                                    <div class="subheading">Matching</div>
-                                    <v-img src="assets/muffinstock.jpg" aspect-ratio="1.7" contain></v-img>
-                                    <div class="subheading pt-3">Too high</div>
-                                    <v-img src="assets/muffinstock.jpg" aspect-ratio="2" contain></v-img>
-                                    <div class="subheading pt-3">Too low</div>
-                                    <v-img src="assets/muffinstock.jpg" aspect-ratio="1.4" contain></v-img>
+                                    <v-img src="./assets/mexicanstock.jpg" aspect-ratio="1.7" contain></v-img>
+                                    <v-img src="./assets/pokestock.jpg" aspect-ratio="2" contain></v-img>
+                                    <v-img src="./assets/chinesestock.jpg" aspect-ratio="1.4" contain></v-img>
                                 </v-layout>
                             </v-flex>
                         </v-layout>

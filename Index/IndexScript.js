@@ -1,27 +1,27 @@
 // JavaScript source code
 
 //Carousel code from vuetify 
-new Vue({
-    el: '#app',
-    data() {
-        return {
-            items: [
-                {
-                    src: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'
-                },
-                {
-                    src: 'https://media-cdn.tripadvisor.com/media/photo-s/11/a2/4a/45/matt-s-rustic-industrial.jpg'
-                },
-                {
-                    src: 'https://www.instock.nl/app/uploads/2016/07/RubendeRuijter_InstockDH-51_klein.jpg'
-                },
-                {
-                    src: 'https://media.istockphoto.com/photos/modern-room-with-tables-and-chairs-picture-id639067562?k=6&m=639067562&s=612x612&w=0&h=ZgAdRwxOaBmex_bSviYnxbs9siOKwy0mD32GkeElswE='
-                }
-            ]
-        }
-    }
-})
+
+    export default {
+        data() {
+    return {
+        items: [
+          {
+        src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'
+  },
+          {
+        src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg'
+  },
+          {
+        src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg'
+  },
+          {
+        src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
+  }
+]
+}
+}
+}
 
 //gallery from vuetify
 new Vue({
