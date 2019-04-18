@@ -1,14 +1,11 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* Note: Search results css is appended in the SearchJS.js file. */
 
 * { 
     margin: 0;
 }
 
-.navbar {
-    height: 15vh;
-    background-color: black;
-}
+
 
 #search-location {
     width: 30%;
@@ -21,4 +18,36 @@
     margin-bottom: 1%;
     margin-left: 2%;
 }
+
+body {
+    background-color: #722222;
+}
+
+#header {
+    background-color: #000000;
+    color: white;
+}
+
+#footer {
+    text-align: center;
+    background-color: #000000;
+    color: white;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: black;
+}
+
+a:active {
+    color: black;
+}
+
 
