@@ -1,4 +1,5 @@
 @charset "utf-8";
+/* Note: Search results css is appended in the SearchJS.js file. */
 
 * { 
     margin: 0;
@@ -6,5 +7,18 @@
 
 .navbar {
     height: 15vh;
-    background-color: grey;
+    background-color: black;
 }
+
+#search-location {
+    width: 30%;
+    margin-bottom: 1%;
+    margin-left: 2%;
+}
+
+#search-term {
+    width: 30%;
+    margin-bottom: 1%;
+    margin-left: 2%;
+}
+
