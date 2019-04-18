@@ -28,10 +28,10 @@ function startSearch() {
                     $.each(data.businesses, function (i, item) {
                         // Store each business's object in a variable
                         var id = item.id;
-                        var alias = item.alias;
                         var phone = item.display_phone;
                         var image = item.image_url;
                         var name = item.name;
+                        var price = item.price;
                         var rating = item.rating;
                         var reviewcount = item.review_count;
                         var address = item.location.address1;
@@ -39,11 +39,12 @@ function startSearch() {
                         var state = item.location.state;
                         var zipcode = item.location.zip_code;
                         // Append our result into our page
-                        $('#results').append('<div id="' + id + '" style="width:46%;float:left;margin-top:30px;margin-bottom:50px;margin-left:2%;margin-right:2%">' + 
-                        '<img src="' + image + '" style="width:200px;height:150px;float:left;border:1px solid black;box-shadow:2px 2px 2px darkslategrey;margin-right:4%">' + 
-                        '<br><b>' + name + '</b> ' + 
-                        '<br>Address: ' + address + ' ' + city + ', ' + state + ' ' + zipcode + 
+                        $('#results').append('<div id="' + id + '" style="width:46%;float:left;margin-top:30px;margin-bottom:40px;margin-left:2%;margin-right:2%">' + 
+                        '<img src="' + image + '" style="width:200px;height:150px;float:left;border:1px solid black;border-radius:2%;box-shadow:2px 2px 2px darkslategrey;margin-bottom:10px;margin-right:4%">' + 
+                        '<h4>' + name + '</h4> ' + 
+                        'Address: ' + address + ' ' + city + ', ' + state + ' ' + zipcode + 
                         '<br>Phone: ' + phone + 
+                        //'<br>Price: ' + price +
                         '<br>This business has a rating of ' + rating + ' with ' + reviewcount + ' reviews.</div>');
                     });
                 } else {
