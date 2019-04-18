@@ -8,7 +8,7 @@ function startSearch() {
     var myurl = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=" + searchLocation + "&term=" + searchTerm;
 
     if (searchLocation == null || searchLocation == "") {
-        $('#results').append('<h5 style="color:red;">* Please specify a location! * </h5>');
+        $('#results').append('<h5 style="color:red;">** Please specify a location! **</h5>');
     } else {
         $.ajax({
             url: myurl,
@@ -39,7 +39,12 @@ function startSearch() {
                         var state = item.location.state;
                         var zipcode = item.location.zip_code;
                         // Append our result into our page
-                        $('#results').append('<div id="' + id + '" style="margin-top:50px;margin-bottom:50px;"><img src="' + image + '" style="width:200px;height:150px;"><br>We found <b>' + name + '</b> (' + alias + ')<br>Business ID: ' + id + '<br> Located at: ' + address + ' ' + city + ', ' + state + ' ' + zipcode + '<br>The phone number for this business is: ' + phone + '<br>This business has a rating of ' + rating + ' with ' + reviewcount + ' reviews.</div>');
+                        $('#results').append('<div id="' + id + '" style="width:46%;float:left;margin-top:30px;margin-bottom:50px;margin-left:2%;margin-right:2%">' + 
+                        '<img src="' + image + '" style="width:200px;height:150px;float:left;border:1px solid black;box-shadow:2px 2px 2px darkslategrey;margin-right:4%">' + 
+                        '<br><b>' + name + '</b> ' + 
+                        '<br>Address: ' + address + ' ' + city + ', ' + state + ' ' + zipcode + 
+                        '<br>Phone: ' + phone + 
+                        '<br>This business has a rating of ' + rating + ' with ' + reviewcount + ' reviews.</div>');
                     });
                 } else {
                     // If our results are 0; no businesses were returned by the JSON therefor we display on the page no results were found
