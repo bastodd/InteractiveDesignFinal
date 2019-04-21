@@ -55,3 +55,14 @@ function startSearch() {
         });
     }
 }
+
+function setup(){
+    noCanvas();
+    let lang = navigator.language || 'en-US';
+    let speechRec = new p5.speechRec(lang, gotSpeech);
+    speechRec.start();
+
+    function gotSpeech(){
+        console.log(speechRec);
+    }
+}
