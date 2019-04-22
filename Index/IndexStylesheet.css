@@ -36,17 +36,18 @@ a:active {
     box-sizing: border-box
 }
 
-/*Carousel Tags*/
+/*CAROUSEL CSS*/
 * {
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 body {
-    font-family: Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0
 }
 
 .mySlides {
-    display: none;
+    display: none
 }
 
 img {
@@ -59,6 +60,33 @@ img {
     position: relative;
     margin: auto;
 }
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
 
 /* Caption text */
 .text {
@@ -82,6 +110,7 @@ img {
 
 /* The dots/bullets/indicators */
 .dot {
+    cursor: pointer;
     height: 15px;
     width: 15px;
     margin: 0 2px;
@@ -91,27 +120,16 @@ img {
     transition: background-color 0.6s ease;
 }
 
-.active {
-    background-color: #717171;
-}
+    .active, .dot:hover {
+        background-color: #717171;
+    }
 
 /* Fading animation */
 .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
 
 @keyframes fade {
     from {
@@ -125,7 +143,63 @@ img {
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-    .text {
+    .prev, .next, .text {
         font-size: 11px
     }
 }
+/*END CAROUSEL*/
+
+/*GALLERY*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+    -ms-flex: 50%; /* IE 10 */
+    flex: 50%;
+    padding: 0 4px;
+}
+
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+    }
+
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+    .btn:hover {
+        background-color: #ddd;
+    }
+
+    .btn.active {
+        background-color: #666;
+        color: white;
+    }
+/*END GALLERY*/
