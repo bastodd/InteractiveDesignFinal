@@ -29,3 +29,24 @@ a:hover {
 a:active {
     color: black;
 }
+
+#app {
+    margin-bottom: 40px;
+}
+
+#results-container {
+    width: 100%; 
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+#receipt-container {
+    width: 25%;
+    text-align: left; 
+    display: inline-block;
+}
+
+
+#submit-btn {
+    margin-left: 1.5%; 
+}

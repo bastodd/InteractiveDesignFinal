@@ -5,7 +5,7 @@ var result = url.searchParams.get("test");
 var id;
 
 $('#results1').html("");
-id = "GWwa6DzhA-Z2_BDZbunYPw"; //Reminder: change this later
+//id = "GWwa6DzhA-Z2_BDZbunYPw";
 id = result;
 
 var myurl = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/" + id;
