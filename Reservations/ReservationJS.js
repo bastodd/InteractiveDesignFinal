@@ -17,22 +17,22 @@ Vue.component('reservation', {
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input v-model="name" type="text" class="form-control" placeholder="Full Name">
+                                    <input v-model="name" type="text" class="form-control" id="name" placeholder="Full Name">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input v-model="phone" type="tel" class="form-control" placeholder="Phone Number">
+                                    <input v-model="phone" type="tel" class="form-control" id="phone" placeholder="Phone Number">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input v-model="restaurant_name" type="text" class="form-control" placeholder="Restaurant Name">
+                                    <input v-model="restaurant_name" type="text" class="form-control" id="restaurantname" placeholder="Restaurant Name">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <select v-model="people" class="form-control">
+                                    <select v-model="people" class="form-control" id="people">
                                         <option selected>1 Person</option>
                                         <option>2 People</option>
                                         <option>3 People</option>
@@ -53,12 +53,12 @@ Vue.component('reservation', {
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input v-model="time" type="time" class="form-control" placeholder="Time">
+                                    <input v-model="time" type="time" class="form-control" id="time" placeholder="Time">
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <textarea v-model="text" class="form-control" cols="30" rows="10" placeholder="Additional Information"></textarea>
+                                    <textarea v-model="text" class="form-control" id="info" cols="30" rows="10" placeholder="Additional Information"></textarea>
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-primary" id="submit-btn">Make Reservation</button>
