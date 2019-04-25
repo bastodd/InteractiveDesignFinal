@@ -1,24 +1,35 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Food Finder - Restaurant</title>
     <link rel="stylesheet" type="text/css" href="./RestaurantStylesheet.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+            integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vuex"></script>
 </head>
+
 <body>
     <!-- Start header section -->
     <header id="header">
         <nav class="navbar" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">Website Name</a>
+                    <a class="navbar-brand" href="../index.html">FOODFINDER</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
                         <li><a href="../index.html">HOME</a></li>
-                        <li><a href="../Featured/FeaturedPage.html">FEATURED</a></li>
                         <li><a href="../reservations/reservationpage.html">RESERVATIONS</a></li>
                         <li><a href="../Search/SearchPage.html">SEARCH</a></li>
                         <li><a href="../ContactUs/ContactUsPage.html">CONTACT</a></li>
@@ -28,6 +39,35 @@
         </nav>
     </header>
     <!-- End header section -->
+
+    <div class="main-image-container">
+        <!--<img src="../Assets/breakfaststock.jpg" width="600" height="400" alt=""/>-->
+    </div>
+
+    <div class="rating-container">
+
+    </div>
+
+    <div class="content-container">
+        <div class="hours-container">
+            <!-- Results list view -->
+            <div id="results1">
+
+            </div>
+
+        </div>
+
+        <div class="reviews-container">
+            <!-- Results list view -->
+            <div id="results2">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="RestaurantDetailsJS.js"></script>
+    <script src="RestaurantReviewsJS.js"></script>
+
     <!-- Start Footer -->
     <footer id="footer">
         Interactive Design Final Project<br />
@@ -36,6 +76,6 @@
     </footer>
     <!-- End Footer -->
 
-
 </body>
+
 </html>

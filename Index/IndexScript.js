@@ -7,10 +7,6 @@
 
 
 //gallery from vuetify
-new Vue({
-    el: '#app',
-
-})
 
 //Search Bar from vue.js
    

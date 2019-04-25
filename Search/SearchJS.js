@@ -38,9 +38,10 @@ function startSearch() {
                         var city = item.location.city;
                         var state = item.location.state;
                         var zipcode = item.location.zip_code;
+                        
                         // Append our result into our page
-                        $('#results').append('<div id="' + id + '" style="width:46%;float:left;margin-top:30px;margin-bottom:40px;margin-left:2%;margin-right:2%">' + 
-                        '<img src="' + image + '" style="width:200px;height:150px;float:left;border:1px solid black;border-radius:2%;box-shadow:2px 2px 2px darkslategrey;margin-bottom:10px;margin-right:4%">' + 
+                        $('#results').append('<div style="width:46%;float:left;margin-top:30px;margin-bottom:40px;margin-left:2%;margin-right:2%">' + 
+                        '<img id="' + id + '" src="' + image + '" style="width:200px;height:150px;float:left;border:1px solid black;border-radius:2%;box-shadow:2px 2px 2px darkslategrey;margin-bottom:10px;margin-right:4%" onclick="redirect()">' + 
                         '<h4>' + name + '</h4> ' + 
                         'Address: ' + address + ' ' + city + ', ' + state + ' ' + zipcode + 
                         '<br>Phone: ' + phone + 
@@ -54,6 +55,11 @@ function startSearch() {
             }
         });
     }
+}
+
+function redirect() {
+    var transferid = event.target.id;
+    window.location.href = "../Restaurant/RestaurantPage.html?test=" + transferid;
 }
 
 function setup(){

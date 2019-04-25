@@ -32,3 +32,19 @@ a:hover {
 a:active {
     color: black;
 }
+
+
+.content-container {
+    overflow: hidden;
+    margin: 0% 4%;
+}
+
+.hours-container {
+    width: 40%;
+    float: left; 
+}
+
+.reviews-container {
+    width: 60%;
+    float: right;
+}
