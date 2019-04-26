@@ -364,7 +364,7 @@
             if (array.length == 2) {
               document.getElementById("name").value = array[1];
             } else if (array.length == 3) {
-              parseInt(document.getElementById("phone").value, 10) = array[2];
+              document.getElementById("phone").value = array[2];
             } else if (array.length == 4) {
               document.getElementById("restaruantname").value = array[3];
             } else if (array.length == 5) {

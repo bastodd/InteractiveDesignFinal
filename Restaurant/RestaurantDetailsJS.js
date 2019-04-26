@@ -27,12 +27,12 @@ $.ajax({
         var category1 = data.categories[0].title;
         var category2 = data.categories[1].title;
         var category3 = data.categories[2].title;
-        var price = data.price;
         var rating = data.rating;
         var reviewcount = data.review_count;
         var address = data.location.address1;
         var city = data.location.city;
         var zipcode = data.location.zip_code;
+        var country = data.location.country;
         var state = data.location.state;
         var photo1 = data.photos[0];
         var photo2 = data.photos[1];
@@ -54,9 +54,8 @@ $.ajax({
             '<br><br><div style="display:flex"><div style="flex:50%;padding-right:4%">' +
             '<b>Address: </b>' + address + ' ' + city + ', ' + state + ' ' + zipcode +
             '<br><b>Phone: </b>' + phone +
-            '<br><b>Rating: </b>' + rating  +
-            '<br><b>Price: </b>' + price +
-            '<br><b>Categories: </b>' + category1 + ', ' + category2 + ', ' + category3 + '</div>' +
+            '<br><b>Rating: </b>' + rating + '</div>' +
+            //'<br>Price: ' + price +
 
             '<div style="flex:50%">' +
             '<b>Operating Hours: </b>' +
@@ -66,9 +65,7 @@ $.ajax({
             '<br>Thursday: ' + thurhours +
             '<br>Friday: ' + frihours +
             '<br>Saturday: ' + sathours +
-            '<br>Sunday: ' + sunhours + '</div></div>' +
-            '<br><br><div style="display:flex; width="30%"><img src="' + photo2 + '"/>' +
-            '<img src="' + photo3 + '"/>' + '</div></div>');
+            '<br>Sunday: ' + sunhours + '</div></div></div>');
     }
 });
 
