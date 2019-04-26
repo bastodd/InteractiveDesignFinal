@@ -364,15 +364,13 @@
             if (array.length == 2) {
               document.getElementById("name").value = array[1];
             } else if (array.length == 3) {
-              document.getElementById("phone").value = array[2];
+              document.getElementById("size").value = array[2];
             } else if (array.length == 4) {
-              document.getElementById("restaurantname").value = array[3];
+              document.getElementById("phone").value = array[3];
             } else if (array.length == 5) {
-              document.getElementById("size").value = array[4];
+              document.getElementById("datepicker").value = array[4];
             } else if (array.length == 6) {
-              document.getElementById("datepicker").value = array[5];
-            } else if (array.length == 7) {
-              document.getElementById("time").value = array[6];
+              document.getElementById("time").value = array[5];
             } else {
 
             }
