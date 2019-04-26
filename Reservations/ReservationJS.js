@@ -22,7 +22,7 @@ Vue.component('reservation', {
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input v-model="phone" type="tel" class="form-control" id="phone" placeholder="Phone Number">
+                                    <input v-model="phone" type="number" class="form-control" id="phone" placeholder="Phone Number">
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -48,12 +48,12 @@ Vue.component('reservation', {
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input v-model="date" type="date" class="form-control" id="datepicker" placeholder="Date">
+                                    <input v-model="date" type="text" class="form-control" id="datepicker" placeholder="Date">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input v-model="time" type="time" class="form-control" id="time" placeholder="Time">
+                                    <input v-model="time" type="text" class="form-control" id="time" placeholder="Time">
                                 </div>
                             </div>
                             <div class="col-md-12">
