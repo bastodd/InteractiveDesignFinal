@@ -49,7 +49,7 @@ $.ajax({
         // Append our result into our page
         $('#results1').append('<div id="' + businessid + '" style="width:100%;margin-top:30px;margin-bottom:40px;margin-left:2%;margin-right:2%;padding-right:4%">' +
             '<h3>' + name + '</h3> ' +
-            '<img src="' + imageurl + '" width="80%" height="250px" style="border:1px solid black;border-radius:2%;box-shadow:2px 2px 2px darkslategrey" />' +
+            '<img src="' + imageurl + '" width="80%" style="border:1px solid black;border-radius:2%;box-shadow:2px 2px 2px darkslategrey" />' +
 
             '<br><br><div style="display:flex"><div style="flex:50%;padding-right:4%">' +
             '<b>Address: </b>' + address + ' ' + city + ', ' + state + ' ' + zipcode +
@@ -68,3 +68,5 @@ $.ajax({
             '<br>Sunday: ' + sunhours + '</div></div></div>');
     }
 });
+
+
